@@ -1,6 +1,6 @@
 # 04_express_33915059
 
-A minimal Express server with a few demo routes. Use links in the `links.txt` to view the demo.
+A minimal Express server with a few demo routes. Use links in `links.txt` to view the demo.
 
 ## Quick start
 
