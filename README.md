@@ -1,6 +1,6 @@
 # 04_express_33915059
 
-A minimal Express server with a few demo routes.
+A minimal Express server with a few demo routes. Use links in the `links.txt` to view the demo.
 
 ## Quick start
 
@@ -36,4 +36,5 @@ Server starts on http://localhost:8000
 index.js            # Express app entry
 routes/main.js      # Route definitions
 files/a.html        # Sample HTML served by /file
+links.txt           # Contains the demo links
 ```
