@@ -10,7 +10,7 @@ router.get('/contact', (req, res) => res.send('<h1>This is contact page</h1><p>E
 router.get('/date', (req, res) => res.send('<h1>This is date page</h1><p>Date: ' + new Date().toLocaleDateString('en-GB') + '</p>' + '<p>Time: ' + new Date().toLocaleTimeString('en-GB') + '</p>'));   // Date route: use toLocaleDateString and toLocaleTimeString to shows current date and time
 router.get('/welcome/:name', (req, res) => res.send('<h1>Welcome ' + req.params.name + '</h1>'));   // Welcome route: use parameter to greet user by name
 router.get('/chain', (req, res, next) => {  // Chain route: demonstrate chained handlers with a delay
-    res.write('<p>This is the first handler, the second will follow after 2 seconds...</p>');
+    res.write('<h1>This is chain page</h1><p>This is the first handler, the second will follow after 2 seconds...</p>');
     setTimeout(() => { next(); }, 2000);   // Add a 2-second delay before calling next handler
 }, (req, res) => {
     res.write('<p>This is the second handler</p>');
